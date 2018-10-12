@@ -28,9 +28,10 @@ public class Main {
         cm.addStudent(stud1);    //add two students to this course
         cm.addStudent(stud2);
 
-        double cmAverage = cm.averageSc();    //calculate the course average score
-        int cmNumbers = cm.getNumStud();
+        int cmNumbers =  cm.getNumStud();
+        double cmAverage = (cmNumbers == 0) ? 0: cm.averageSc();    //calculate the course average score
         int csNumbers = cs.getNumStud();
+        double csAverage = (csNumbers ==0) ? 0: cs.averageSc();
 
 
         System.out.println("\ncourse name: " + cm.getName());
@@ -43,7 +44,7 @@ public class Main {
 
         cs.addStudent(stud3);// add a student
         System.out.println("\n course name: "+ cs.getName());
-        System.out.println("\t average =  = "+ cs.averageSc());
+        System.out.println("\t average =  = "+ csAverage);
         System.out.print("\t stud number = "+ cs.getNumStud());
 
         for (int i = 0; i < csNumbers; i++) {
