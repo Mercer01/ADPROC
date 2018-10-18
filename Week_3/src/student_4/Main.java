@@ -1,4 +1,4 @@
-package student;
+package student_4;
 
 
 public class Main {
@@ -42,7 +42,7 @@ public class Main {
             System.out.println("\t Student" + i +":" + cm.list[i].getName());
         }
 
-        cs.addStudent(stud3);// add a student
+        cs.addStudent(stud3);// add a student_4
         System.out.println("\n course name: "+ cs.getName());
         System.out.println("\t average =  = "+ csAverage);
         System.out.print("\t stud number = "+ cs.getNumStud());

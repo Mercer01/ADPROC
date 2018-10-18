@@ -1,9 +1,10 @@
-package student;
+package student_4;
 
 public class Course{
     private String name, code;
     private int numStudents = 0;
     Student[] list = new Student[10];
+
 
     public Course(){}
 
@@ -15,6 +16,7 @@ public class Course{
         list[numStudents]=st;
         numStudents+=1;
     }
+
     double averageSc(){
         double sum=0.0;
         for(int i=0;i<numStudents; i++)
@@ -27,6 +29,10 @@ public class Course{
 
     String getName(){
         return name;
+    }
+
+    public Student[] getList() {
+        return list;
     }
 }
 

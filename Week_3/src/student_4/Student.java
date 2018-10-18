@@ -1,4 +1,4 @@
-package student;
+package student_4;
 
 import java.util.Arrays;
 
